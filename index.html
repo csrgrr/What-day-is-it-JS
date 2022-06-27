@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- style -->
+<style>
+html {
+    background-color: #a3cef1 ;
+    margin: 0;
+    padding: 2em;
+
+}
+* {
+    text-align: center;
+    color: #274c77
+}
+h1{
+    background-color: #6096ba;
+    border: solid #274c77 .5em;
+    padding: 1em;
+    border-radius: 2px;
+    box-shadow: 5px 5px  #8b8c89;
+}
+
+button {
+    background-color: #6096ba;
+    border: solid #274c77 .5em;
+    border-radius: 2px;
+    width: 27.6em;
+    height: 3em;
+    box-shadow: 5px 5px  #8b8c89;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+img {
+    background-color: #e7ecef;
+    margin: 1em;
+    padding: 1em;
+    width: 20em;
+    height:20em;
+    border: solid #274c77 .5em;
+    border-radius: 2px;
+    box-shadow: 5px 5px  #8b8c89;
+}
+
+button:hover {
+    background-color: #e7ecef;
+    transition: 0.3s;
+}
+</style>
+
+
+
+</head>
+
+<!-- html -->
+
+
+
+
+<body>
+<h1>What day is it?</h1>
+
+
+<!-- script -->
+<script>
+    function dia_de_hoy(){
+        let hoy = new Date(); 
+      var x = document.getElementById('meme')
+    if (hoy.getDay() == 0){
+      x.setAttribute("src", "images/mon.jpg");
+      x.setAttribute("width", "500");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Sunday");
+      document.body.appendChild(x);
+    }  else if (hoy.getDay() == 1){
+           x.setAttribute("src", "images/mon.jpg");
+      x.setAttribute("width", "500");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Monday");
+      document.body.appendChild(x);
+    } else if (hoy.getDay() == 2){
+      x.setAttribute("src", "images/tue.jpg");
+      x.setAttribute("width", "500");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Tuesday");
+      document.body.appendChild(x);
+    } else if (hoy.getDay() == 3){
+      x.setAttribute("src", "images/wed.jpg");
+      x.setAttribute("width", "600");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Wednesday");
+      document.body.appendChild(x);
+    }  else if (hoy.getDay() == 4){
+      x.setAttribute("src", "images/thu.jpg");
+      x.setAttribute("width", "600");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Thursday");
+      document.body.appendChild(x);
+    }  else if (hoy.getDay() == 5){
+      x.setAttribute("src", "images/fri.jpg");
+      x.setAttribute("width", "500");
+      x.setAttribute("height", "600");
+      x.setAttribute("alt", "Friday");
+      document.body.appendChild(x);
+    }  else if (hoy.getDay() == 6){
+      x.setAttribute("src", "images/sat.jpg");
+      x.setAttribute("width", "600");
+      x.setAttribute("height", "500");
+      x.setAttribute("alt", "Saturday");
+      document.body.appendChild(x);
+    }     
+
+}
+    </script>
+
+ 
+    <button onclick="dia_de_hoy()">Push me!</button>
+    <br>
+    <img id="meme">
+
+</body>
+</html>
